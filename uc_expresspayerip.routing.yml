@@ -1,0 +1,23 @@
+uc_expresspayerip.complete:
+  path: "/cart/expresspayerip/complete"
+  defaults:
+    _controller: '\Drupal\uc_expresspayerip\Controller\ExpresspayEripController::complete'
+    _title: "Order complete"
+  requirements:
+    _permission: "access content"
+
+uc_expresspayerip.notification:
+  path: "/cart/expresspayerip/notification"
+  defaults:
+    _controller: '\Drupal\uc_expresspayerip\Controller\ExpresspayEripController::notification'
+    _title: "Notification callback"
+  requirements:
+    _permission: "access content"
+
+uc_expresspayerip.cancel:
+  path: "/cart/expresspayerip/cancel"
+  defaults:
+    _controller: '\Drupal\uc_expresspayerip\Controller\ExpresspayEripController::cancel'
+    _title: "Order cancel"
+  requirements:
+    _permission: "access content"
